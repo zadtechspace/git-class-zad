@@ -6,7 +6,7 @@ body{
     width: 100%;
 background:linear-gradient(360deg,rgba(0,4,66,0) 0%,black 150%),url(img/hero\ bg.jpg);   
      background-position: center;
-     padding:0px  100px;
+     /* padding:0px  100px; */
 }
 
 .herobox1{
@@ -95,22 +95,28 @@ align-content: center;
 
 
 .sec1{
-    height: 80vh;
+    height: 100vh;
     background-color: black;
     width: 100%;
-    padding: 50px 150px;
-    /* margin-top: 115px; */
+    padding: 100px 100px;
+   
 }
 
 .sec1box{
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    margin-top: 170px;
+    gap: 100px;
+    padding: 100px;
+    
+    
+  
 }
+
 
 .sec1box1{
     width:100%;
+  
 }
 .sec1box1 h2{
     font-size: 50px;
@@ -125,20 +131,25 @@ align-content: center;
 .sec1box2{
     width: 100%;
     
+    
+    
   
 }
 
 .sec1box2 img{
-    position: absolute;
-    right: 150px;
-    top: 900px;
-    z-index: 10;
+    /* width: 100%; */
+   position: relative;
+   bottom: 120px;
+   right: 560px;
+    
+    
+   
+    
 }
 
 .sec1box2show{
-    position: relative;
-    bottom: 90px;
-    left: 50px;
+    position: absolute;
+    width: 100%;
 }
 
 .sec2{
@@ -273,31 +284,31 @@ ul li a{
 
 @media (min-width:320px) and (max-width:480px){
   
-    .hero{padding: 20px;height: 100vh;}
-    .herobox1{}
-  .hero1btn{width: 60%;}
+    .hero{padding: 20px;height: 80vh;overflow: hidden;}
+    .herobox1{width: 100%;}
+ 
     .herobox1 div button{padding: 5px 10px;}
+    .herobox1 div button a {font-size: 10px;text-decoration: none;padding: 5px 10px;text-wrap: nowrap;}
 
     .herobox2{margin-top: 150px;}
     
     .herobox2 h1{font-size: 250%;}
 
-    .herobox2 p
-
-   
+ 
     .form button{padding: 5px 10px;font-size: 16px;}
     .form{display: flex;align-items: center; flex-direction: column;gap: 0px; margin-top: 10px;}
 
 /* divider */
 
-.sec1{padding:0px;margin-top: 0px;height: 90vh;}
-.sec1box{display: flex;flex-direction: column;margin-top: 0px;}
-.sec1box1{margin-top: 40px;align-content: center;;}
+.sec1{padding:0px;margin-top: 0px;height: 100vh;padding: 0px;}
+.sec1box{display: flex;flex-direction: column;margin-top: 0px;justify-content:;padding: 0px;gap: 0px;}
+.sec1box1{margin-top: 50px;align-content: center;;}
 .sec1box1 h2{ font-size: 30px;text-align: center;}
 .sec1box1 p{font-size: 20px;text-align: center;padding:0px 50px;}
-.sec1box2{width: 100%;padding:30px 30px 30px 30px;}
-.sec1box2 img{width: 100%;position: absolute;left: 0px;top: 750px;}
-.sec1box2show{position: relative;top:50px;left: 30px;width: 1%;}
+.sec1box2{width: 100%;margin-top: 100px;}
+.sec1box2 div{width: 100%;}
+.sec1box2 div img{width: 100%; position: relative;bottom: 300px;right: 0px;}
+/* .sec1box2show{position: absolute;} */
     
  /* divider */
  .sec2{height: 100vh;padding: 0px;}
