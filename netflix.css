@@ -2,75 +2,99 @@ body{
     overflow-x: hidden;
 }
 .hero{
-    height: 120dvh;
-    
-    padding:10px 150px;
-    
-    
-    background-position: center;
-    margin-top: -150px;
+    height: 100vh;
+    width: 100%;
+   
      
 }
 
 .herobox1{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 150px;
+    justify-content: space-around;
+   
+    position: absolute;
+    width: 100%;
+    z-index: 10;
     
 
 }
 
-.herobox2{
-    margin: 230px 150px;
+.herobox1 div button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #d9232f;
+    border: none;
+}
+
+.herobox1 div button a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 15px;
     color: white;
+}
+
+.herobox2{
+
+    color: white;
+    position: absolute;
+    
+   
 
 }
 
-.herobox2 h1{
+.herobox2div2{
+    transform: translate(300px,-600px);
+}
+
+.herobox2div2 h1{
     font-size: 50px;
     font-weight: bolder;
 }
 
-.herobox2 p{
+.herobox2div2 p{
     padding: 0px 290px;
     font-size: 23px;
     margin-top: 20px;
     
 }
 
-.herobox2 h3{
+.herobox2div2 h3{
     padding-left: 150px;
     font-size: 20px;
     font-weight: 450;
 }
 
-.herobox2 form{
+.herobox2div2 form{
     margin-top: 30px;
 }
-.herobox2div1{
+.herobox2form{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    /* width: 100%; */
+    /* align-items: center; */
+    /* justify-content:space-between ; */
     margin-top: 20px;
-    padding: 0PX 170PX;
+    /* padding: 0PX 170PX; */
+    margin-left: 180px;
+    
 
 }
 
-.herobox2div1 input{
-    width: 160%;
+.herobox2form input{
+    width: 150%;
     padding: 15px 0px;
     
 
 }
 
-.herobox2div1 button{
+.herobox2form button{
    padding: 10px 35px;
    background-color: #e50914;
    font-size: 25px;
    border: none;
    border-radius: 5px;
    font-weight: bold;
+   margin-left: 150px;
 }
 
 
@@ -79,6 +103,7 @@ body{
     background-color: black;
     width: 100%;
     padding: 50px 150px;
+    margin-top: 115px;
 }
 
 .sec1box{
@@ -103,13 +128,21 @@ body{
 }
 .sec1box2{
     width: 100%;
+    
+  
 }
 
 .sec1box2 img{
     position: absolute;
     right: 150px;
-    top: 800px;
+    top: 900px;
     z-index: 10;
+}
+
+.sec1box2show{
+    position: relative;
+    bottom: 90px;
+    left: 50px;
 }
 
 .sec2{
@@ -126,6 +159,8 @@ body{
     padding: 10px 50px;
 }
 
+
+
 .sec2box1div1{
     display: flex;
     border: 1px solid white;
@@ -140,9 +175,48 @@ body{
 
 }
 
+.sec2box1img2{
+    width: 30%; 
+    margin-left: 5px;
+    padding: 10px 5px;
+}
+
+.sec2box1p1{
+    position: absolute;left: 110px;
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sec2box1p2{
+    position: relative;
+     top: 55px;
+     left: 8px;
+      color: blue;
+}
+
+.sec2box1img3{
+    margin-left: 100px;
+    width:20%;
+    padding: 20px 5px;
+
+}
 .sec2box2{
     width: 100%;
    padding: 150px 0px;
+
+}
+.sec2box2 h2{
+    font-size: 50px;
+    color: white;
+    font-weight: bold"
+
+}
+.sec2box2 p{
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
 
 }
 
@@ -198,4 +272,55 @@ ul li a{
     color: white;
     font-size: 14px;
     font-weight: 50px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width:500px){
+    body{align-content: center;}
+    .hero{padding: 0px;height: 70vh;}
+    .herobox1{padding: 10px 20px;}
+    .herobox1 div button{padding: 3px 5px;}
+    .herobox1 div button a{padding: 3px 5px;text-wrap: nowrap;}
+    
+    .herobox2div1 img{width: 100%;height: 70vh;}
+
+    .herobox2div2{margin-left: -300px;margin-top: 200px;}
+    
+    .herobox2div2 h1{font-size: 35px;padding-right: 310px; text-align: center;}
+
+    .herobox2div2 p{font-size: 18px;padding: 0px;margin-left: 100px;}
+
+    .herobox2div2 h3{font-size: 20px;padding: 0px 380px 0px 0px; font-weight: 0;text-align: center;margin-left: 75px;}
+    
+    .herobox2form{display: flex;flex-direction: column;margin-left: 80px;}
+    .herobox2form input{width: 45%;padding:10px 0px;}
+    .herobox2form div button{padding:10px 30px;margin-left: 80px;font-size: 16px;}
+    
+
+/* divider */
+
+.sec1{padding:0px;margin-top: 0px;height: 90vh;}
+.sec1box{display: flex;flex-direction: column;margin-top: 0px;}
+.sec1box1{margin-top: 40px;align-content: center;;}
+.sec1box1 h2{ font-size: 30px;text-align: center;}
+.sec1box1 p{font-size: 20px;text-align: center;padding:0px 50px;}
+.sec1box2{width: 100%;padding:30px 30px 30px 30px;}
+.sec1box2 img{width: 100%;position: absolute;left: 0px;top: 750px;}
+.sec1box2show{position: relative;top:50px;left: 30px;width: 1%;}
+    
+ /* divider */
+ .sec2{height: 100vh;padding: 0px;}
+ .sec2box{display: flex;flex-direction: column-reverse;}
+ .sec2box1{padding: 10px 0px;}
+ .sec2box1img1{width: 100%;}
+
+ .sec2box1div1{left: 0px;top: 0px;padding: 0px;width: 70%;height: 10vh;}
+ .sec2box1p1{font-size: 14px;left: 80px;bottom: 30px;}
+ .sec2box1p2{font-size: 14px;left:25px;top: 30px;}
+ .sec2box1img3{margin-left: 70px;width: 100%;}
+ .sec2box2{padding: 30px 0px;}
+ .sec2box2 h2{font-size: 33px;text-align: center;}
+ .sec2box2 p{font-size: 20px;text-align: center;}
+
+
 }
