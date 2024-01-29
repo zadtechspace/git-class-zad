@@ -7,7 +7,7 @@ main{
     width: 100%;
 }
 .hero{
-    height: 120vh;
+    height: 100vh;
     width: 100%;
 background:linear-gradient(360deg,rgba(0,4,66,0) 0%,black 150%),url(img/hero\ bg.jpg);   
      background-position: center;
@@ -74,7 +74,10 @@ align-content: center;
     text-align: center;
 }
 
-.form{
+.heroform{display: flex;justify-content: center;gap: 30px;}
+
+.heroform button{background-color: #d9232f;padding: 10px 30px;border: none;border-radius: 5px;}
+/* .form{
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -99,7 +102,7 @@ align-content: center;
    border-radius: 5px;
    font-weight: bold;
    /* margin-left: 150px; */
-}
+
 
 
 .sec1{
@@ -288,19 +291,46 @@ align-content: center;
     background-color: black;
 }
 
+.sec5box{width: 100%;}
+
+.sec5box1 h2{ padding-left: 250px; font-size: 50px;font-weight: bolder;color: white;}
+
 .sec5bottom{
     width: 100%;
     /* margin-top: 50px; */
     padding: 50px 100px;
 }
 
+.sec5bottom h3{font-size: 20px;padding-left: 140px;color: white;}
+
+.sec5bottombutton{text-align: center;}
+
+.sec5bottombutton button{background-color: red;border: none;padding: 5px 20px;border-radius: 5px;}
+
+
 .sec6{
     width: 100%;
     padding:50px 100px;
     background-color: black;
 }
+
+footer{padding: 0px 50px;}
 li{
     margin-top: 20px;
+}
+footer div a{
+    text-decoration: none;margin-left: 60px;color: white;border-bottom: 1px solid white;
+}
+.footerbox1{
+    display: flex;justify-content: space-between;align-items: center;padding-right: 200px;
+}
+
+.footerbox2 select{
+    padding: 8px 28px;background-color: black;color: white;border-radius: 5px;border: 2px solid white;margin-left: 60px;margin-top: 15px;
+}
+
+.footerbox3 p{
+    color: white;margin-left: 60px;margin-top: 15px;font-size: 14px;
 }
 
 ul li a{
@@ -313,9 +343,9 @@ ul li a{
 
 
 @media screen and (min-width:320px) and (max-width:480px){
-  body{}
+  main{padding: 0px 5px;background-color: black;}
   
-    .hero{padding: 20px;height: auto;}
+    .hero{padding:0px;height: auto;}
     .herobox1{width: 100%;}
     .herobox1 img{width: 35%;}
     .herobox1  button{padding: 5px 5px;}
@@ -328,8 +358,8 @@ ul li a{
     .herobox2 h3{font-size: 100%;}
 
  
-    .form button{padding: 10px 20px;font-size: 16px;}
-    .form{display: flex;align-items: center; flex-direction: column;gap: 0px; margin-top: 10px;}
+    .heroform button{padding: 10px 20px;font-size: 16px;}
+    .heroform{display: flex;align-items: center; flex-direction: column;gap: 0px; margin-top: 10px;}
 
 /* divider */
 
@@ -370,5 +400,23 @@ ul li a{
 .sec4box2 h2{font-size: 100%;text-align: center;}
 .sec4box2 p{font-size: 100%;text-align: center;padding: 0px;}
 
+/* divider */
 
+.sec5{width: 100%;height: auto;padding: 0px;
+}
+.sec5box{width: 100%;}
+.sec5box1 h2{padding: 0px;font-size: auto;text-align: center;}
+.sec5box2{width: 100%;}
+.accordion-header button{font-size: auto;}
+
+.sec5bottom{width: 100%;padding: 0px;margin-top: 30px;}
+.sec5bottom h3{padding: 0px;text-align: center;font-size: 100%;}
+.sec5bottominput input{width: 100%;}
+.sec5bottominput{padding: 10px 20px;}
+.sec6{width: 100%;padding: 0px;}
+footer{padding: 0px;}
+footer div a{margin-left: 0px;}
+.footerbox1{padding: 0px;}
+.footerbox2 select{margin-left: 0px;}
+.footerbox3 p{margin-left: 0px;}
 }
