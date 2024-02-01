@@ -1,4 +1,8 @@
+@media screen and (min-width:769px) and (max-width:1366px) {
+    
+}
 body{
+
     overflow-x: hidden;
 }
 
@@ -11,6 +15,7 @@ main{
     width: 100%;
 background:linear-gradient(360deg,rgba(0,4,66,0) 0%,black 150%),url(img/hero\ bg.jpg);   
      background-position: center;
+     /* background-repeat: no-repeat; */
      padding:0px  100px;
 }
 
@@ -120,7 +125,7 @@ align-content: center;
   
 }
 
-.sec1box2 img{
+#sec1box2div img{
     width: 100%;
     position: relative;
     z-index: 1;
@@ -130,7 +135,7 @@ align-content: center;
 #sec1box2div video{
     position: relative;
     bottom: 391px;
-    /* left: 87px; */
+  
     
    
 }
@@ -350,14 +355,14 @@ ul li a{
 }
 
 
-@media screen and (min-width:320px) and (max-width:480px){
+@media screen and (max-width:480px){
   /* main{padding: 0px 5px;background-color: black;} */
   
-    .hero{padding:0px 5px;height: 70vh;}
+    .hero{padding:0px 5px;height: auto;}
     .herobox1{width: 100%;}
     .herobox1 img{width: 35%;}
     .herobox1  button{padding: 5px 5px;}
-    .herobox1  button a {text-wrap: nowrap;}
+    .herobox1  button a {text-wrap: nowrap;font-size: 3vw;padding: 5px 5px;}
 
     .herobox2{margin-top: 80px;}
     
@@ -371,8 +376,8 @@ ul li a{
 
 /* divider */
 
-.sec1{height: 100vh;padding:20px;}
-.sec1box{display: flex;flex-direction: column;justify-content:flex-start;align-items: flex-start; padding: 0px;gap: 0px;}
+.sec1{height: fit-content;padding:20px;}
+.sec1box{display: flex;flex-direction: column;justify-content:center;align-items: center; padding: 0px ;gap: 0px;}
 .sec1box1{margin-top: 0px;align-content: center;}
 .sec1box1 h2{ font-size: 8vw;text-align: center;}
 .sec1box1 p{font-size: 4vw;text-align: center;}
@@ -384,8 +389,8 @@ ul li a{
 
 #sec1box2div img{width: 100%;position:absolute ;left: 0px;margin-top: -46px;}
 #sec1box2div video{position: inherit;width: 100%;}
-   /* .sec1box2 video{width: 100%;}  */
- /* divider */
+ 
+
  .sec2{ height: auto;width: 100%;padding:20px;}
 
  .sec2box{display: flex;flex-direction: column-reverse;align-items: center;justify-content: space-between;padding: 0px;}
