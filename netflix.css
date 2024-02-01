@@ -16,13 +16,14 @@ main{
 background:linear-gradient(360deg,rgba(0,4,66,0) 0%,black 150%),url(img/hero\ bg.jpg);   
      background-position: center;
      /* background-repeat: no-repeat; */
-     padding:0px  100px;
+     padding:10px  100px;
 }
 
 .herobox1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+ 
    
    
     width: 100%;
@@ -358,17 +359,17 @@ ul li a{
 @media screen and (max-width:480px){
   /* main{padding: 0px 5px;background-color: black;} */
   
-    .hero{padding:0px 5px;height: auto;}
-    .herobox1{width: 100%;}
-    .herobox1 img{width: 35%;}
-    .herobox1  button{padding: 5px 5px;}
-    .herobox1  button a {text-wrap: nowrap;font-size: 3vw;padding: 5px 5px;}
+    .hero{padding: 20px;height: auto;}
+    .herobox1{width: 100%;padding: 0px;}
+    .herobox1 img{width: 30%;}
+    .herobox1  button{padding: 4px 0px;}
+    .herobox1  button a {text-wrap: nowrap;font-size: 3.5vw;padding: 5px 20px;}
 
     .herobox2{margin-top: 80px;}
     
     .herobox2 h1{font-size: 8vw;}
     .herobox2 p{font-size: 4vw;}
-    .herobox2 h3{font-size: 4vw;padding:0px 5px;}
+    .herobox2 h3{font-size: 4vw;padding:0px;}
 
     .heroform input{width: 100%;}
     .heroform button{padding: 10px 20px;font-size: 4vw;margin-top: 10px;}
@@ -376,7 +377,7 @@ ul li a{
 
 /* divider */
 
-.sec1{height: fit-content;padding:20px;}
+.sec1{height: 90vh;padding:20px;}
 .sec1box{display: flex;flex-direction: column;justify-content:center;align-items: center; padding: 0px ;gap: 0px;}
 .sec1box1{margin-top: 0px;align-content: center;}
 .sec1box1 h2{ font-size: 8vw;text-align: center;}
